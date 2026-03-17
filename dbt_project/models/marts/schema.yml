@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: fact_sales
+    description: "Central fact table with every sales transaction enriched with loadshedding context"
+    columns:
+      - name: sale_id
+        tests: [not_null, unique]
+      - name: sale_date
+        tests: [not_null]
+      - name: revenue
+        tests: [not_null]
+      - name: loadshed_stage
+        tests:
+          - accepted_values:
+              values: [0, 1, 2, 3, 4, 5, 6]
+
+  - name: dim_products
+    description: "Product dimension with margin tiers"
+    columns:
+      - name: product_id
+        tests: [not_null, unique]
+
+  - name: dim_stores
+    description: "Store dimension with region grouping"
+    columns:
+      - name: store_id
+        tests: [not_null, unique]
+
+  - name: mart_monthly_revenue
+    description: "Monthly aggregated revenue and loadshedding metrics — primary Power BI source"
+    columns:
+      - name: total_revenue
+        tests: [not_null]
+      - name: gross_margin_pct
+        tests: [not_null]

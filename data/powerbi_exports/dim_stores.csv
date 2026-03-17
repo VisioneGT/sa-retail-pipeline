@@ -1,0 +1,6 @@
+store_id,store_name,city,province,region
+S001,Soweto Main,Johannesburg,Gauteng,North
+S002,Sandton Central,Johannesburg,Gauteng,North
+S003,Cape Town CBD,Cape Town,Western Cape,South
+S004,Durban North,Durban,KwaZulu-Natal,East
+S005,Pretoria East,Pretoria,Gauteng,North

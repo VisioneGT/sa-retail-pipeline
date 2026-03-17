@@ -1,0 +1,20 @@
+# SA Retail Analytics Pipeline — Local Stack
+# Install with: pip install -r requirements.txt --only-binary=:all:
+
+# Core data
+pandas>=2.1.0
+numpy>=1.26.0
+scikit-learn>=1.3.0
+
+# Local database
+duckdb>=0.10.0
+
+# dbt with DuckDB adapter (free, local)
+dbt-core>=1.7.0
+dbt-duckdb>=1.7.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Scheduling (optional)
+schedule>=1.2.0

@@ -1,0 +1,13 @@
+# ~/.dbt/profiles.yml
+# Copy this file to C:\Users\YOUR_NAME\.dbt\profiles.yml
+#
+# Uses DuckDB — a free, local database that needs zero setup.
+# The database file will be created automatically at data/sa_retail.duckdb
+
+sa_retail:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('PROJECT_DIR', '') }}/data/sa_retail.duckdb"
+      threads: 4

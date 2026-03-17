@@ -1,0 +1,36 @@
+version: 2
+
+sources:
+  - name: staging
+    schema: main
+    description: "Staging tables loaded from CSV by the Python ETL pipeline"
+    tables:
+      - name: stg_sales
+        description: "Raw sales transactions"
+        columns:
+          - name: sale_id
+            tests: [not_null, unique]
+          - name: date
+            tests: [not_null]
+          - name: store_id
+            tests: [not_null]
+          - name: product_id
+            tests: [not_null]
+
+      - name: stg_products
+        description: "Product catalogue"
+        columns:
+          - name: product_id
+            tests: [not_null, unique]
+
+      - name: stg_stores
+        description: "Store locations"
+        columns:
+          - name: store_id
+            tests: [not_null, unique]
+
+      - name: stg_loadshedding
+        description: "Daily Eskom load shedding data"
+        columns:
+          - name: date
+            tests: [not_null, unique]

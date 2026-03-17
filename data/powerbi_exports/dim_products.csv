@@ -1,0 +1,11 @@
+product_id,product_name,category,unit_cost,unit_price,margin,margin_pct,margin_tier
+P001,White Bread 700g,Bakery,14.99,22.99,8.0,34.8,Medium Margin
+P002,Full Cream Milk 2L,Dairy,22.0,32.99,10.99,33.31,Medium Margin
+P003,Chicken Braai Pack,Meat,65.0,99.99,34.99,34.99,Medium Margin
+P004,Sunflower Oil 2L,Pantry,38.0,54.99,16.99,30.9,Medium Margin
+P005,Maize Meal 5kg,Pantry,42.0,62.99,20.99,33.32,Medium Margin
+P006,Rooibos Tea 100 bags,Beverages,28.0,44.99,16.99,37.76,Medium Margin
+P007,Biltong 250g,Snacks,55.0,84.99,29.99,35.29,Medium Margin
+P008,Boerewors 500g,Meat,45.0,69.99,24.99,35.71,Medium Margin
+P009,Pap & Sauce Ready,Ready Meal,18.0,29.99,11.99,39.98,Medium Margin
+P010,Coca-Cola 2L,Beverages,20.0,32.99,12.99,39.38,Medium Margin
